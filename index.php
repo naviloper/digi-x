@@ -31,8 +31,24 @@ $GLOBALS["products"] = [
     ]
 ];
 
-$co = new Checkout([]);
+$co = new Checkout(['R1', 'R2', 'R3']);
 
+$co->scan('atv');
+$co->scan('atv');
+$co->scan('atv');
+$co->scan('vga');
 
-echo "Hello \n";
+//$co->scan('atv');
+//$co->scan('ipd');
+//$co->scan('ipd');
+//$co->scan('atv');
+//$co->scan('ipd');
+//$co->scan('ipd');
+//$co->scan('ipd');
+//
+//$co->scan('mbp');
+//$co->scan('vga');
+//$co->scan('ipd');
+
+$co->total();
 
